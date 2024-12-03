@@ -1,9 +1,9 @@
 SUMMARY = "PHYTEC's demo for kivy inspired by the CatalogKivy folder in the kivy examples"
 SECTION = "examples"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=966903411056714b6ab7eb638477a2ae"
 
-SRC_URI = "git://github.com/MarineVovard/kivy-demo;protocol=https;branch=main"
+SRC_URI = "git://github.com/phytec/kivy-demo;protocol=https;branch=main"
 SRC_URI += "file://${BPN}.service"
 
 SRCREV = "a1d631d82f761ce78bfb4bdaeed9f673f4a3bed4"
