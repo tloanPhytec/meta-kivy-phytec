@@ -16,12 +16,9 @@ IMAGE_FEATURES += "\
 
 IMAGE_INSTALL += "\
     packagegroup-base \
-    \
     packagegroup-gstreamer \
-    \
     ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', 'weston weston-init', '', d)} \
-    python3-kivy \
+    ${@bb.utils.contains('DISTRO_FEATURES', 'x11 wayland', 'weston-xwayland', '', d)} \
     kivyphy \
+    python3-kivy \
 "
-
-IMAGE_INSTALL += "${@bb.utils.contains('DISTRO_FEATURES', 'x11 wayland', 'weston-xwayland', '', d)}"
